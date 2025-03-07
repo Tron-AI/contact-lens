@@ -17,17 +17,10 @@ TheRightContact.com is designed to be a highly specialized AI-powered contact le
 - Admin dashboard for content management
 - Comprehensive search and query functionality
 
-Out of scope:
-- E-commerce functionality for purchasing contact lenses
-- Integration with EMR/EHR systems
-- Mobile application development (initial phase)
-- Direct integration with diagnostic equipment
-
 ### Stakeholders
 
-- Product Owner: [Name], responsible for defining requirements and priorities
-- Development Team: Frontend and backend developers, AI/ML specialists, database experts
-- QA Team: Responsible for testing and quality assurance
+- Product Owner: Dr. Jason Compton, responsible for defining requirements and priorities
+- Development Team: Tron AI - Tahir Hameed, AI/ML specialists, database expert
 - End Users: Eye care professionals (optometrists, ophthalmologists)
 - Content Experts: Specialized optometrists providing domain expertise
 - IT Operations: Responsible for deployment and maintenance
@@ -59,10 +52,10 @@ Out of scope:
 
 ### Technical Requirements
 
-1. Frontend: React.js with Next.js framework
+1. Frontend: Next.js framework
 2. Backend: Python with FastAPI
 3. Database: PostgreSQL for user data, Vector database for embeddings
-4. AI/ML: Integration with OpenAI or equivalent LLM APIs
+4. AI/ML: Integration with OpenAI
 5. Authentication: OAuth 2.0 with JWT
 6. Cloud Platform: AWS (Amazon Web Services)
 7. Version Control: Git with GitHub
@@ -98,7 +91,7 @@ graph TD
 
 TheRightContact.com system follows a microservices architecture:
 
-1. **Client**: React.js single-page application with a ChatGPT-like interface
+1. **Client**: Next.js single-page application with a ChatGPT-like interface
 2. **Load Balancer**: Distributes traffic for high availability
 3. **Web Application Server**: Next.js server for rendering and serving the frontend
 4. **Backend API Service**: FastAPI service orchestrating all backend operations
@@ -428,35 +421,32 @@ We will use an Agile Scrum methodology with two-week sprints. This approach allo
 
 ### Milestones and Timeline
 
-**Phase 1: Foundation (Months 1-2)**
-- Sprint 0 (2 weeks): Project setup, environment configuration
+**Phase 1: Foundation (Months 1-1.5)**
 - Sprint 1 (2 weeks): User authentication and basic frontend
 - Sprint 2 (2 weeks): Google Sheets integration and basic query processing
 - Sprint 3 (2 weeks): Vector database setup and initial RAG implementation
 - Sprint 4 (2 weeks): Basic admin dashboard and content management
 
-**Phase 2: Core Functionality (Months 3-4)**
-- Sprint 5 (2 weeks): PDF document processing and integration
-- Sprint 6 (2 weeks): Web scraping implementation
-- Sprint 7 (2 weeks): Enhanced RAG with multi-step conversations
-- Sprint 8 (2 weeks): Response formatting (text, tables, images)
+**Phase 2: Core Functionality (Months 2-3)**
+- Sprint 5 (2 weeks): Web scraping implementation
+- Sprint 6 (2 weeks): Enhanced RAG with multi-step conversations
+- Sprint 7 (2 weeks): Response formatting (text, tables, images)
 
-**Phase 3: Advanced Features (Months 5-6)**
-- Sprint 9 (2 weeks): Subscription management system
-- Sprint 10 (2 weeks): Image upload and basic analysis
-- Sprint 11 (2 weeks): Advanced ML for corneal topography
-- Sprint 12 (2 weeks): Lens recommendation engine
+**Phase 3: Advanced Features (Months 4)**
+- Sprint 8 (1 weeks): Subscription management system
+- Sprint 9 (1 weeks): Image upload and basic analysis
+- Sprint 10 (1 weeks): Advanced ML for corneal topography
+- Sprint 11 (1 weeks): Lens recommendation engine
 
-**Phase 4: Refinement and Launch (Month 7)**
-- Sprint 13 (2 weeks): Performance optimization and security hardening
-- Sprint 14 (2 weeks): User acceptance testing and bug fixes
-- Launch preparation (2 weeks): Final testing, documentation, and deployment
+**Phase 4: Refinement and Launch (Month 5)**
+- Sprint 12 (1 weeks): Performance optimization and security hardening
+- Sprint 13 (1 weeks): User acceptance testing and bug fixes
 
 ## 5. Development Environment Setup
 
 ### Tools and Technologies
 
-- Frontend: React.js, Next.js, Tailwind CSS
+- Frontend: Next.js, Next.js, Tailwind CSS
 - Backend: Python 3.9+, FastAPI
 - Databases: PostgreSQL, Pinecone or Weaviate (vector database)
 - AI/ML: OpenAI API, TensorFlow/PyTorch
